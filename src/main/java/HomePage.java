@@ -67,6 +67,7 @@ public class HomePage extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 700));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 204), 2));
+        jPanel1.setMaximumSize(new java.awt.Dimension(500, 500));
 
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -221,7 +222,7 @@ public class HomePage extends javax.swing.JFrame {
                 System.out.println("add wIcon");
                 File imageFile = new File(jfc.getSelectedFile().toString()); //"C:\\Users\\guven\\Desktop\\fis.jpg"
                 Tesseract instance = new Tesseract(); //
-                instance.setDatapath("C:\\Users\\guven\\Desktop\\Tess4J\\tessdata");
+                instance.setDatapath("C:\\Users\\guvenaltunsoy\\Desktop\\Tess4J\\tessdata");
                 instance.setLanguage("tur");
                 String result = instance.doOCR(imageFile);
                 //System.out.println(result);
