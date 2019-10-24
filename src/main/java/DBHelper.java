@@ -1,38 +1,15 @@
-
-import static com.lowagie.text.pdf.PdfFileSpecification.url;
-import java.awt.List;
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
-import java.util.function.Predicate;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.net.ssl.HttpsURLConnection;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.asynchttpclient.AsyncCompletionHandler;
-import org.asynchttpclient.AsyncHandler;
-import org.asynchttpclient.AsyncHttpClient;
-import org.asynchttpclient.AsyncHttpClientConfig;
-import org.asynchttpclient.BoundRequestBuilder;
-import org.asynchttpclient.ListenableFuture;
 import org.asynchttpclient.Request;
-import org.asynchttpclient.RequestBuilder;
-import org.asynchttpclient.Response;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -239,7 +216,7 @@ public class DBHelper {
         //client.fisolustur(new Fis("7123", "guven nALTUNSOY", "23.10.2019", "1000"));
         //client.fisOlustur(new Fis("00", "ggguven İŞLET", "23.10.2019", "10100"));
         //client.urunOlustur(new Urun("1","deneme urun","2","%18","77.7"));
-        //client.urunBul("13");
+        //client.urunBul("123");
 
     }
 }

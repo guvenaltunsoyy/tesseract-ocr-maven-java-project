@@ -1,8 +1,5 @@
-
-import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
-import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 
 /*
