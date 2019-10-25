@@ -12,7 +12,17 @@ public class Fis {
     String fis_no;
     String isletme_adi;
     String tarih;
-    String toplam_fiyat;
+    String toplam_fiyat;    
+    String toplam_kdv;
+
+    public String getToplam_kdv() {
+        return toplam_kdv;
+    }
+
+    public void setToplam_kdv(String toplam_kdv) {
+        this.toplam_kdv = toplam_kdv;
+    }
+
 
     public String getToplam_fiyat() {
         return toplam_fiyat;
@@ -46,11 +56,13 @@ public class Fis {
         this.tarih = tarih;
     }
 
-    public Fis(String fis_no, String isletme_adi, String tarih, String toplam_fiyat) {
+    public Fis(String fis_no, String isletme_adi, String tarih, String toplam_fiyat, String toplam_kdv) {
         this.fis_no = fis_no;
         this.isletme_adi = isletme_adi;
         this.tarih = tarih;
-        this.toplam_fiyat = toplam_fiyat;
+        this.toplam_fiyat = toplam_fiyat;        
+        this.toplam_kdv = toplam_kdv;
+
     }
     public Fis(){}
     

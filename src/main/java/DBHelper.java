@@ -1,3 +1,4 @@
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -68,7 +69,7 @@ public class DBHelper {
                 System.err.println("Işletme Adi --> " + item.getIsletme_adi());
                 System.err.println("Tarih --> " + item.getTarih());
             }
-        }else if (code.equals("404")) {
+        } else if (code.equals("404")) {
             System.err.println("fis bulunumadi");
             return null;
         }
@@ -108,14 +109,16 @@ public class DBHelper {
                 fis.setFis_no(rows.getJSONObject(i).getString("fis_no"));
                 fis.setIsletme_adi(rows.getJSONObject(i).getString("isletme_adi"));
                 fis.setTarih(rows.getJSONObject(i).getString("tarih"));
+                fis.setToplam_fiyat(rows.getJSONObject(i).getString("toplam_fiyat"));
+                fis.setToplam_kdv(rows.getJSONObject(i).getString("toplam_kdv"));
                 fisler.add(fis);
             }
-            for (Fis item : fisler) {
+            /*   for (Fis item : fisler) {
                 System.err.println("Fiş No --> " + item.getFis_no());
                 System.err.println("Işletme Adi --> " + item.getIsletme_adi());
                 System.err.println("Tarih --> " + item.getTarih());
-            }
-        }else if (code.equals("404")) {
+            }*/
+        } else if (code.equals("404")) {
             System.err.println("fis bulunumadi");
             return null;
         }
